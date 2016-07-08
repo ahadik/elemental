@@ -26,9 +26,9 @@
     width: 100%; }
 
 .element {
-  width: 100px;
-  height: 100px;
-  font-size: 12.5px; }
+  width: 200px;
+  height: 200px;
+  font-size: 25px; }
   .element .element__atomic-number, .element .element__atomic-mass {
     font-size: 1em; }
   .element .element__symbol {

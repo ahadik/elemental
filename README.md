@@ -1,44 +1,3 @@
-<style>
-	.element {
-		border: 1px solid black;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		font-family: sans-serif;
-		padding: 1%; }
-	.element .element__atomic-number {
-		-ms-flex-preferred-size: 0;
-		flex-basis: 0;
-		width: 100%; }
-	.element .element__symbol {
-		-ms-flex-preferred-size: 100%;
-	    flex-basis: 100%;
-		line-height: 1em;
-		text-align: center;
-		width: 100%; }
-	.element .element__atomic-mass {
-		-ms-flex-preferred-size: 0;
-	    flex-basis: 0;
-		text-align: right;
-		width: 100%; }
-
-	.element {
-	  width: 200px;
-	  height: 200px;
-	  font-size: 25px; }
-
-	  .element.Aluminum .element__symbol::before, .element.Al .element__symbol::before {
-	    content: "Al"; }
-	  .element.Aluminum .element__atomic-number::before, .element.Al .element__atomic-number::before {
-	    content: "13"; }
-	  .element.Aluminum .element__atomic-mass::before, .element.Al .element__atomic-mass::before {
-	    content: "26.9815386"; }
-</style>
-
 #Elemental
 ###Bringing the power of SASS to the periodic elements
 
@@ -66,11 +25,7 @@ Alternatively, you can specify the desired element with the elemen't abbreviated
 
 This markup generates the following block provided the proper styling is included:
 
-<div class="element Aluminum">
-	<span class="element__atomic-number"></span>
-	<span class="element__symbol"></span>
-	<span class="element__atomic-mass"></span>
-</div>
+<img width="242" alt="Aluminum" src="https://cloud.githubusercontent.com/assets/3239506/16701937/a16dddc2-4528-11e6-8389-cff78c190864.png">
 
 All data is injected using the `content` CSS attribute. All data is stored inside a SASS map found in `scss/_elements.scss`. You can choose to compile the entire SASS map into CSS (~50kb minified) or import specific elements within your SASS (~4kb per element). SASS usage is explained below.
 
