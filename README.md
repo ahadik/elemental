@@ -6,7 +6,8 @@ If you've got a web project that needs to display the blocks of the periodic tab
 
 ##How To Use It
 
-*Markup*
+######Markup
+
 The markup needed for an Elemental element is super simple, and needs only a single class to inject the proper content.
 
 	<div class="element Aluminum">
@@ -29,7 +30,8 @@ This markup generates the following block provided the proper styling is include
 
 All data is injected using the `content` CSS attribute. All data is stored inside a SASS map found in `scss/_elements.scss`. You can choose to compile the entire SASS map into CSS (~50kb minified) or import specific elements within your SASS (~4kb per element). SASS usage is explained below.
 
-*CSS*
+######CSS
+
 If you're not a SASS user, you can make use of the full CSS file that comes precompiled with the Bower dependency (`css/elemental.min.css`). You can poke around the unminified CSS by referring to `css/elemental.css`.
 
 To use the pre-compiled CSS file, just include it in your HTML file just as you would any other CSS dependency. This will give you access to the data for all the elements. 
@@ -47,7 +49,8 @@ You can change the dimensions by applying your own CSS like so:
 Everything else will scale accordingly.
 
 
-*SASS*
+######SASS
+
 Elemental has a more user-friendly interface for SASS users. You can choose to include (and thus compile) the styling and data for every element, or a subset of them. Although the dimensions can be over-ridden by custom styling, including all elements specifies the same dimensions for every element. Including elements 1 by 1 allows you to specify custom dimensions for each element.
 
 So how to use the SASS library? First of all, include the library in your own SASS styling by importing the `elemental.scss` file. Then, use the `elemental()` mixin to include either all or some of the elements.
