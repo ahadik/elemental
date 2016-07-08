@@ -1,6 +1,8 @@
 #Elemental
 ###Bringing the power of SASS to the periodic elements
 
+<img width="691" alt="screen shot 2016-07-08 at 4 33 53 pm" src="https://cloud.githubusercontent.com/assets/3239506/16702149/cd6a0f62-4529-11e6-9eb8-f6afec43c2cb.png">
+
 ##What This Is
 If you've got a web project that needs to display the blocks of the periodic table, this SASS library makes it easy to do just that. All you need to do is provide some super simple markup, and then make use of either the compiled Elemental CSS or SASS mixins.
 
