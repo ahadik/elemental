@@ -38,19 +38,21 @@
 	}
 }
 
-@mixin elemental($width, $height, $element-name: '') {
+@mixin elemental($width, $height, $elementList...) {
 	.element {
 		@extend %element;
-		@include set-size($width, $height);
 
-		@if $element-name != ''{
-			$element-data: map-get($elements, $element-name);
-			&.#{$element-name}, &.#{map-get($element-data, 'symbol')}{
-				@include elementStyle($element-name, $element-data);
+		@if length($elementList) > 0 {
+			@each $element-name in $elementList{
+				$element-data: map-get($elements, $element-name);
+				&.#{$element-name}, &.#{map-get($element-data, 'symbol')}{
+					@include set-size($width, $height);
+					@include elementStyle($element-name, $element-data);
+				}
 			}
 
 		} @else {
-
+			@include set-size($width, $height);
 			@each $element-name, $element-data in $elements {
 
 				&.#{$element-name}, &.#{map-get($element-data, 'symbol')}{

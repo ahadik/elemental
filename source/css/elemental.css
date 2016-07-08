@@ -1,1073 +1,743 @@
 .element {
-  display: block; }
-  .large.element {
-    height: 200px;
-    width: 200px; }
-  .medium.element {
-    height: 150px;
-    width: 150px; }
-  .small.element {
-    height: 100px;
-    width: 100px; }
-
-.element.Hydrogen .element__symbol::before, .element.H .element__symbol::before {
-  content: "H"; }
-
-.element.Hydrogen .element__atomic-number::before, .element.H .element__atomic-number::before {
-  content: "1"; }
-
-.element.Hydrogen .element__atomic-mass::before, .element.H .element__atomic-mass::before {
-  content: "1.00794"; }
-
-.element.Helium .element__symbol::before, .element.He .element__symbol::before {
-  content: "He"; }
-
-.element.Helium .element__atomic-number::before, .element.He .element__atomic-number::before {
-  content: "2"; }
-
-.element.Helium .element__atomic-mass::before, .element.He .element__atomic-mass::before {
-  content: "4.002602"; }
-
-.element.Lithium .element__symbol::before, .element.Li .element__symbol::before {
-  content: "Li"; }
-
-.element.Lithium .element__atomic-number::before, .element.Li .element__atomic-number::before {
-  content: "3"; }
-
-.element.Lithium .element__atomic-mass::before, .element.Li .element__atomic-mass::before {
-  content: "6.941"; }
-
-.element.Beryllium .element__symbol::before, .element.Be .element__symbol::before {
-  content: "Be"; }
-
-.element.Beryllium .element__atomic-number::before, .element.Be .element__atomic-number::before {
-  content: "4"; }
-
-.element.Beryllium .element__atomic-mass::before, .element.Be .element__atomic-mass::before {
-  content: "9.012182"; }
-
-.element.Boron .element__symbol::before, .element.B .element__symbol::before {
-  content: "B"; }
-
-.element.Boron .element__atomic-number::before, .element.B .element__atomic-number::before {
-  content: "5"; }
-
-.element.Boron .element__atomic-mass::before, .element.B .element__atomic-mass::before {
-  content: "10.811"; }
-
-.element.Carbon .element__symbol::before, .element.C .element__symbol::before {
-  content: "C"; }
-
-.element.Carbon .element__atomic-number::before, .element.C .element__atomic-number::before {
-  content: "6"; }
-
-.element.Carbon .element__atomic-mass::before, .element.C .element__atomic-mass::before {
-  content: "12.0107"; }
-
-.element.Nitrogen .element__symbol::before, .element.N .element__symbol::before {
-  content: "N"; }
-
-.element.Nitrogen .element__atomic-number::before, .element.N .element__atomic-number::before {
-  content: "7"; }
-
-.element.Nitrogen .element__atomic-mass::before, .element.N .element__atomic-mass::before {
-  content: "14.0067"; }
-
-.element.Oxygen .element__symbol::before, .element.O .element__symbol::before {
-  content: "O"; }
-
-.element.Oxygen .element__atomic-number::before, .element.O .element__atomic-number::before {
-  content: "8"; }
-
-.element.Oxygen .element__atomic-mass::before, .element.O .element__atomic-mass::before {
-  content: "15.9994"; }
-
-.element.Fluorine .element__symbol::before, .element.F .element__symbol::before {
-  content: "F"; }
-
-.element.Fluorine .element__atomic-number::before, .element.F .element__atomic-number::before {
-  content: "9"; }
-
-.element.Fluorine .element__atomic-mass::before, .element.F .element__atomic-mass::before {
-  content: "18.9984032"; }
-
-.element.Neon .element__symbol::before, .element.Ne .element__symbol::before {
-  content: "Ne"; }
-
-.element.Neon .element__atomic-number::before, .element.Ne .element__atomic-number::before {
-  content: "10"; }
-
-.element.Neon .element__atomic-mass::before, .element.Ne .element__atomic-mass::before {
-  content: "20.1797"; }
-
-.element.Sodium .element__symbol::before, .element.Na .element__symbol::before {
-  content: "Na"; }
-
-.element.Sodium .element__atomic-number::before, .element.Na .element__atomic-number::before {
-  content: "11"; }
-
-.element.Sodium .element__atomic-mass::before, .element.Na .element__atomic-mass::before {
-  content: "22.98976928"; }
-
-.element.Magnesium .element__symbol::before, .element.Mg .element__symbol::before {
-  content: "Mg"; }
-
-.element.Magnesium .element__atomic-number::before, .element.Mg .element__atomic-number::before {
-  content: "12"; }
-
-.element.Magnesium .element__atomic-mass::before, .element.Mg .element__atomic-mass::before {
-  content: "24.3050"; }
-
-.element.Aluminum .element__symbol::before, .element.Al .element__symbol::before {
-  content: "Al"; }
-
-.element.Aluminum .element__atomic-number::before, .element.Al .element__atomic-number::before {
-  content: "13"; }
-
-.element.Aluminum .element__atomic-mass::before, .element.Al .element__atomic-mass::before {
-  content: "26.9815386"; }
-
-.element.Silicon .element__symbol::before, .element.Si .element__symbol::before {
-  content: "Si"; }
-
-.element.Silicon .element__atomic-number::before, .element.Si .element__atomic-number::before {
-  content: "14"; }
-
-.element.Silicon .element__atomic-mass::before, .element.Si .element__atomic-mass::before {
-  content: "28.0855"; }
-
-.element.Phosphorus .element__symbol::before, .element.P .element__symbol::before {
-  content: "P"; }
-
-.element.Phosphorus .element__atomic-number::before, .element.P .element__atomic-number::before {
-  content: "15"; }
-
-.element.Phosphorus .element__atomic-mass::before, .element.P .element__atomic-mass::before {
-  content: "30.973762"; }
-
-.element.Sulfur .element__symbol::before, .element.S .element__symbol::before {
-  content: "S"; }
-
-.element.Sulfur .element__atomic-number::before, .element.S .element__atomic-number::before {
-  content: "16"; }
-
-.element.Sulfur .element__atomic-mass::before, .element.S .element__atomic-mass::before {
-  content: "32.065"; }
-
-.element.Chlorine .element__symbol::before, .element.Cl .element__symbol::before {
-  content: "Cl"; }
-
-.element.Chlorine .element__atomic-number::before, .element.Cl .element__atomic-number::before {
-  content: "17"; }
-
-.element.Chlorine .element__atomic-mass::before, .element.Cl .element__atomic-mass::before {
-  content: "35.453"; }
-
-.element.Argon .element__symbol::before, .element.Ar .element__symbol::before {
-  content: "Ar"; }
-
-.element.Argon .element__atomic-number::before, .element.Ar .element__atomic-number::before {
-  content: "18"; }
-
-.element.Argon .element__atomic-mass::before, .element.Ar .element__atomic-mass::before {
-  content: "39.948"; }
-
-.element.Potassium .element__symbol::before, .element.K .element__symbol::before {
-  content: "K"; }
-
-.element.Potassium .element__atomic-number::before, .element.K .element__atomic-number::before {
-  content: "19"; }
-
-.element.Potassium .element__atomic-mass::before, .element.K .element__atomic-mass::before {
-  content: "39.0983"; }
-
-.element.Calcium .element__symbol::before, .element.Ca .element__symbol::before {
-  content: "Ca"; }
-
-.element.Calcium .element__atomic-number::before, .element.Ca .element__atomic-number::before {
-  content: "20"; }
-
-.element.Calcium .element__atomic-mass::before, .element.Ca .element__atomic-mass::before {
-  content: "40.078"; }
-
-.element.Scandium .element__symbol::before, .element.Sc .element__symbol::before {
-  content: "Sc"; }
-
-.element.Scandium .element__atomic-number::before, .element.Sc .element__atomic-number::before {
-  content: "21"; }
-
-.element.Scandium .element__atomic-mass::before, .element.Sc .element__atomic-mass::before {
-  content: "44.955912"; }
-
-.element.Titanium .element__symbol::before, .element.Ti .element__symbol::before {
-  content: "Ti"; }
-
-.element.Titanium .element__atomic-number::before, .element.Ti .element__atomic-number::before {
-  content: "22"; }
-
-.element.Titanium .element__atomic-mass::before, .element.Ti .element__atomic-mass::before {
-  content: "47.867"; }
-
-.element.Vanadium .element__symbol::before, .element.V .element__symbol::before {
-  content: "V"; }
-
-.element.Vanadium .element__atomic-number::before, .element.V .element__atomic-number::before {
-  content: "23"; }
-
-.element.Vanadium .element__atomic-mass::before, .element.V .element__atomic-mass::before {
-  content: "50.9415"; }
-
-.element.Chromium .element__symbol::before, .element.Cr .element__symbol::before {
-  content: "Cr"; }
-
-.element.Chromium .element__atomic-number::before, .element.Cr .element__atomic-number::before {
-  content: "24"; }
-
-.element.Chromium .element__atomic-mass::before, .element.Cr .element__atomic-mass::before {
-  content: "51.9961"; }
-
-.element.Manganese .element__symbol::before, .element.Mn .element__symbol::before {
-  content: "Mn"; }
-
-.element.Manganese .element__atomic-number::before, .element.Mn .element__atomic-number::before {
-  content: "25"; }
-
-.element.Manganese .element__atomic-mass::before, .element.Mn .element__atomic-mass::before {
-  content: "54.938045"; }
-
-.element.Iron .element__symbol::before, .element.Fe .element__symbol::before {
-  content: "Fe"; }
-
-.element.Iron .element__atomic-number::before, .element.Fe .element__atomic-number::before {
-  content: "26"; }
-
-.element.Iron .element__atomic-mass::before, .element.Fe .element__atomic-mass::before {
-  content: "55.845"; }
-
-.element.Cobalt .element__symbol::before, .element.Co .element__symbol::before {
-  content: "Co"; }
-
-.element.Cobalt .element__atomic-number::before, .element.Co .element__atomic-number::before {
-  content: "27"; }
-
-.element.Cobalt .element__atomic-mass::before, .element.Co .element__atomic-mass::before {
-  content: "58.933195"; }
-
-.element.Nickel .element__symbol::before, .element.Ni .element__symbol::before {
-  content: "Ni"; }
-
-.element.Nickel .element__atomic-number::before, .element.Ni .element__atomic-number::before {
-  content: "28"; }
-
-.element.Nickel .element__atomic-mass::before, .element.Ni .element__atomic-mass::before {
-  content: "58.6934"; }
-
-.element.Copper .element__symbol::before, .element.Cu .element__symbol::before {
-  content: "Cu"; }
-
-.element.Copper .element__atomic-number::before, .element.Cu .element__atomic-number::before {
-  content: "29"; }
-
-.element.Copper .element__atomic-mass::before, .element.Cu .element__atomic-mass::before {
-  content: "63.546"; }
-
-.element.Zinc .element__symbol::before, .element.Zn .element__symbol::before {
-  content: "Zn"; }
-
-.element.Zinc .element__atomic-number::before, .element.Zn .element__atomic-number::before {
-  content: "30"; }
-
-.element.Zinc .element__atomic-mass::before, .element.Zn .element__atomic-mass::before {
-  content: "65.38"; }
-
-.element.Gallium .element__symbol::before, .element.Ga .element__symbol::before {
-  content: "Ga"; }
-
-.element.Gallium .element__atomic-number::before, .element.Ga .element__atomic-number::before {
-  content: "31"; }
-
-.element.Gallium .element__atomic-mass::before, .element.Ga .element__atomic-mass::before {
-  content: "69.723"; }
-
-.element.Germanium .element__symbol::before, .element.Ge .element__symbol::before {
-  content: "Ge"; }
-
-.element.Germanium .element__atomic-number::before, .element.Ge .element__atomic-number::before {
-  content: "32"; }
-
-.element.Germanium .element__atomic-mass::before, .element.Ge .element__atomic-mass::before {
-  content: "72.64"; }
-
-.element.Arsenic .element__symbol::before, .element.As .element__symbol::before {
-  content: "As"; }
-
-.element.Arsenic .element__atomic-number::before, .element.As .element__atomic-number::before {
-  content: "33"; }
-
-.element.Arsenic .element__atomic-mass::before, .element.As .element__atomic-mass::before {
-  content: "74.92160"; }
-
-.element.Selenium .element__symbol::before, .element.Se .element__symbol::before {
-  content: "Se"; }
-
-.element.Selenium .element__atomic-number::before, .element.Se .element__atomic-number::before {
-  content: "34"; }
-
-.element.Selenium .element__atomic-mass::before, .element.Se .element__atomic-mass::before {
-  content: "78.96"; }
-
-.element.Bromine .element__symbol::before, .element.Br .element__symbol::before {
-  content: "Br"; }
-
-.element.Bromine .element__atomic-number::before, .element.Br .element__atomic-number::before {
-  content: "35"; }
-
-.element.Bromine .element__atomic-mass::before, .element.Br .element__atomic-mass::before {
-  content: "79.904"; }
-
-.element.Krypton .element__symbol::before, .element.Kr .element__symbol::before {
-  content: "Kr"; }
-
-.element.Krypton .element__atomic-number::before, .element.Kr .element__atomic-number::before {
-  content: "36"; }
-
-.element.Krypton .element__atomic-mass::before, .element.Kr .element__atomic-mass::before {
-  content: "83.798"; }
-
-.element.Rubidium .element__symbol::before, .element.Rb .element__symbol::before {
-  content: "Rb"; }
-
-.element.Rubidium .element__atomic-number::before, .element.Rb .element__atomic-number::before {
-  content: "37"; }
-
-.element.Rubidium .element__atomic-mass::before, .element.Rb .element__atomic-mass::before {
-  content: "85.4678"; }
-
-.element.Strontium .element__symbol::before, .element.Sr .element__symbol::before {
-  content: "Sr"; }
-
-.element.Strontium .element__atomic-number::before, .element.Sr .element__atomic-number::before {
-  content: "38"; }
-
-.element.Strontium .element__atomic-mass::before, .element.Sr .element__atomic-mass::before {
-  content: "87.62"; }
-
-.element.Yttrium .element__symbol::before, .element.Y .element__symbol::before {
-  content: "Y"; }
-
-.element.Yttrium .element__atomic-number::before, .element.Y .element__atomic-number::before {
-  content: "39"; }
-
-.element.Yttrium .element__atomic-mass::before, .element.Y .element__atomic-mass::before {
-  content: "88.90585"; }
-
-.element.Zirconium .element__symbol::before, .element.Zr .element__symbol::before {
-  content: "Zr"; }
-
-.element.Zirconium .element__atomic-number::before, .element.Zr .element__atomic-number::before {
-  content: "40"; }
-
-.element.Zirconium .element__atomic-mass::before, .element.Zr .element__atomic-mass::before {
-  content: "91.224"; }
-
-.element.Niobium .element__symbol::before, .element.Nb .element__symbol::before {
-  content: "Nb"; }
-
-.element.Niobium .element__atomic-number::before, .element.Nb .element__atomic-number::before {
-  content: "41"; }
-
-.element.Niobium .element__atomic-mass::before, .element.Nb .element__atomic-mass::before {
-  content: "92.90638"; }
-
-.element.Molybdenum .element__symbol::before, .element.Mo .element__symbol::before {
-  content: "Mo"; }
-
-.element.Molybdenum .element__atomic-number::before, .element.Mo .element__atomic-number::before {
-  content: "42"; }
-
-.element.Molybdenum .element__atomic-mass::before, .element.Mo .element__atomic-mass::before {
-  content: "95.96"; }
-
-.element.Technetium .element__symbol::before, .element.Tc .element__symbol::before {
-  content: "Tc"; }
-
-.element.Technetium .element__atomic-number::before, .element.Tc .element__atomic-number::before {
-  content: "43"; }
-
-.element.Technetium .element__atomic-mass::before, .element.Tc .element__atomic-mass::before {
-  content: "[98]"; }
-
-.element.Ruthenium .element__symbol::before, .element.Ru .element__symbol::before {
-  content: "Ru"; }
-
-.element.Ruthenium .element__atomic-number::before, .element.Ru .element__atomic-number::before {
-  content: "44"; }
-
-.element.Ruthenium .element__atomic-mass::before, .element.Ru .element__atomic-mass::before {
-  content: "101.07"; }
-
-.element.Rhodium .element__symbol::before, .element.Rh .element__symbol::before {
-  content: "Rh"; }
-
-.element.Rhodium .element__atomic-number::before, .element.Rh .element__atomic-number::before {
-  content: "45"; }
-
-.element.Rhodium .element__atomic-mass::before, .element.Rh .element__atomic-mass::before {
-  content: "102.90550"; }
-
-.element.Palladium .element__symbol::before, .element.Pd .element__symbol::before {
-  content: "Pd"; }
-
-.element.Palladium .element__atomic-number::before, .element.Pd .element__atomic-number::before {
-  content: "46"; }
-
-.element.Palladium .element__atomic-mass::before, .element.Pd .element__atomic-mass::before {
-  content: "106.42"; }
-
-.element.Silver .element__symbol::before, .element.Ag .element__symbol::before {
-  content: "Ag"; }
-
-.element.Silver .element__atomic-number::before, .element.Ag .element__atomic-number::before {
-  content: "47"; }
-
-.element.Silver .element__atomic-mass::before, .element.Ag .element__atomic-mass::before {
-  content: "107.8682"; }
-
-.element.Cadmium .element__symbol::before, .element.Cd .element__symbol::before {
-  content: "Cd"; }
-
-.element.Cadmium .element__atomic-number::before, .element.Cd .element__atomic-number::before {
-  content: "48"; }
-
-.element.Cadmium .element__atomic-mass::before, .element.Cd .element__atomic-mass::before {
-  content: "112.411"; }
-
-.element.Indium .element__symbol::before, .element.In .element__symbol::before {
-  content: "In"; }
-
-.element.Indium .element__atomic-number::before, .element.In .element__atomic-number::before {
-  content: "49"; }
-
-.element.Indium .element__atomic-mass::before, .element.In .element__atomic-mass::before {
-  content: "114.818"; }
-
-.element.Tin .element__symbol::before, .element.Sn .element__symbol::before {
-  content: "Sn"; }
-
-.element.Tin .element__atomic-number::before, .element.Sn .element__atomic-number::before {
-  content: "50"; }
-
-.element.Tin .element__atomic-mass::before, .element.Sn .element__atomic-mass::before {
-  content: "118.710"; }
-
-.element.Antimony .element__symbol::before, .element.Sb .element__symbol::before {
-  content: "Sb"; }
-
-.element.Antimony .element__atomic-number::before, .element.Sb .element__atomic-number::before {
-  content: "51"; }
-
-.element.Antimony .element__atomic-mass::before, .element.Sb .element__atomic-mass::before {
-  content: "121.760"; }
-
-.element.Tellurium .element__symbol::before, .element.Te .element__symbol::before {
-  content: "Te"; }
-
-.element.Tellurium .element__atomic-number::before, .element.Te .element__atomic-number::before {
-  content: "52"; }
-
-.element.Tellurium .element__atomic-mass::before, .element.Te .element__atomic-mass::before {
-  content: "127.60"; }
-
-.element.Iodine .element__symbol::before, .element.I .element__symbol::before {
-  content: "I"; }
-
-.element.Iodine .element__atomic-number::before, .element.I .element__atomic-number::before {
-  content: "53"; }
-
-.element.Iodine .element__atomic-mass::before, .element.I .element__atomic-mass::before {
-  content: "126.90447"; }
-
-.element.Xenon .element__symbol::before, .element.Xe .element__symbol::before {
-  content: "Xe"; }
-
-.element.Xenon .element__atomic-number::before, .element.Xe .element__atomic-number::before {
-  content: "54"; }
-
-.element.Xenon .element__atomic-mass::before, .element.Xe .element__atomic-mass::before {
-  content: "131.293"; }
-
-.element.Cesium .element__symbol::before, .element.Cs .element__symbol::before {
-  content: "Cs"; }
-
-.element.Cesium .element__atomic-number::before, .element.Cs .element__atomic-number::before {
-  content: "55"; }
-
-.element.Cesium .element__atomic-mass::before, .element.Cs .element__atomic-mass::before {
-  content: "132.9054519"; }
-
-.element.Barium .element__symbol::before, .element.Ba .element__symbol::before {
-  content: "Ba"; }
-
-.element.Barium .element__atomic-number::before, .element.Ba .element__atomic-number::before {
-  content: "56"; }
-
-.element.Barium .element__atomic-mass::before, .element.Ba .element__atomic-mass::before {
-  content: "137.327"; }
-
-.element.Lanthanum .element__symbol::before, .element.La .element__symbol::before {
-  content: "La"; }
-
-.element.Lanthanum .element__atomic-number::before, .element.La .element__atomic-number::before {
-  content: "57"; }
-
-.element.Lanthanum .element__atomic-mass::before, .element.La .element__atomic-mass::before {
-  content: "138.90547"; }
-
-.element.Cerium .element__symbol::before, .element.Ce .element__symbol::before {
-  content: "Ce"; }
-
-.element.Cerium .element__atomic-number::before, .element.Ce .element__atomic-number::before {
-  content: "58"; }
-
-.element.Cerium .element__atomic-mass::before, .element.Ce .element__atomic-mass::before {
-  content: "140.116"; }
-
-.element.Praseodymium .element__symbol::before, .element.Pr .element__symbol::before {
-  content: "Pr"; }
-
-.element.Praseodymium .element__atomic-number::before, .element.Pr .element__atomic-number::before {
-  content: "59"; }
-
-.element.Praseodymium .element__atomic-mass::before, .element.Pr .element__atomic-mass::before {
-  content: "140.90765"; }
-
-.element.Neodymium .element__symbol::before, .element.Nd .element__symbol::before {
-  content: "Nd"; }
-
-.element.Neodymium .element__atomic-number::before, .element.Nd .element__atomic-number::before {
-  content: "60"; }
-
-.element.Neodymium .element__atomic-mass::before, .element.Nd .element__atomic-mass::before {
-  content: "144.242"; }
-
-.element.Promethium .element__symbol::before, .element.Pm .element__symbol::before {
-  content: "Pm"; }
-
-.element.Promethium .element__atomic-number::before, .element.Pm .element__atomic-number::before {
-  content: "61"; }
-
-.element.Promethium .element__atomic-mass::before, .element.Pm .element__atomic-mass::before {
-  content: "[145]"; }
-
-.element.Samarium .element__symbol::before, .element.Sm .element__symbol::before {
-  content: "Sm"; }
-
-.element.Samarium .element__atomic-number::before, .element.Sm .element__atomic-number::before {
-  content: "62"; }
-
-.element.Samarium .element__atomic-mass::before, .element.Sm .element__atomic-mass::before {
-  content: "150.36"; }
-
-.element.Europium .element__symbol::before, .element.Eu .element__symbol::before {
-  content: "Eu"; }
-
-.element.Europium .element__atomic-number::before, .element.Eu .element__atomic-number::before {
-  content: "63"; }
-
-.element.Europium .element__atomic-mass::before, .element.Eu .element__atomic-mass::before {
-  content: "151.964"; }
-
-.element.Gadolinium .element__symbol::before, .element.Gd .element__symbol::before {
-  content: "Gd"; }
-
-.element.Gadolinium .element__atomic-number::before, .element.Gd .element__atomic-number::before {
-  content: "64"; }
-
-.element.Gadolinium .element__atomic-mass::before, .element.Gd .element__atomic-mass::before {
-  content: "157.25"; }
-
-.element.Terbium .element__symbol::before, .element.Tb .element__symbol::before {
-  content: "Tb"; }
-
-.element.Terbium .element__atomic-number::before, .element.Tb .element__atomic-number::before {
-  content: "65"; }
-
-.element.Terbium .element__atomic-mass::before, .element.Tb .element__atomic-mass::before {
-  content: "158.92535"; }
-
-.element.Dysprosium .element__symbol::before, .element.Dy .element__symbol::before {
-  content: "Dy"; }
-
-.element.Dysprosium .element__atomic-number::before, .element.Dy .element__atomic-number::before {
-  content: "66"; }
-
-.element.Dysprosium .element__atomic-mass::before, .element.Dy .element__atomic-mass::before {
-  content: "162.500"; }
-
-.element.Holmium .element__symbol::before, .element.Ho .element__symbol::before {
-  content: "Ho"; }
-
-.element.Holmium .element__atomic-number::before, .element.Ho .element__atomic-number::before {
-  content: "67"; }
-
-.element.Holmium .element__atomic-mass::before, .element.Ho .element__atomic-mass::before {
-  content: "164.93032"; }
-
-.element.Erbium .element__symbol::before, .element.Er .element__symbol::before {
-  content: "Er"; }
-
-.element.Erbium .element__atomic-number::before, .element.Er .element__atomic-number::before {
-  content: "68"; }
-
-.element.Erbium .element__atomic-mass::before, .element.Er .element__atomic-mass::before {
-  content: "167.259"; }
-
-.element.Thulium .element__symbol::before, .element.Tm .element__symbol::before {
-  content: "Tm"; }
-
-.element.Thulium .element__atomic-number::before, .element.Tm .element__atomic-number::before {
-  content: "69"; }
-
-.element.Thulium .element__atomic-mass::before, .element.Tm .element__atomic-mass::before {
-  content: "168.93421"; }
-
-.element.Ytterbium .element__symbol::before, .element.Yb .element__symbol::before {
-  content: "Yb"; }
-
-.element.Ytterbium .element__atomic-number::before, .element.Yb .element__atomic-number::before {
-  content: "70"; }
-
-.element.Ytterbium .element__atomic-mass::before, .element.Yb .element__atomic-mass::before {
-  content: "173.054"; }
-
-.element.Lutetium .element__symbol::before, .element.Lu .element__symbol::before {
-  content: "Lu"; }
-
-.element.Lutetium .element__atomic-number::before, .element.Lu .element__atomic-number::before {
-  content: "71"; }
-
-.element.Lutetium .element__atomic-mass::before, .element.Lu .element__atomic-mass::before {
-  content: "174.9668"; }
-
-.element.Hafnium .element__symbol::before, .element.Hf .element__symbol::before {
-  content: "Hf"; }
-
-.element.Hafnium .element__atomic-number::before, .element.Hf .element__atomic-number::before {
-  content: "72"; }
-
-.element.Hafnium .element__atomic-mass::before, .element.Hf .element__atomic-mass::before {
-  content: "178.49"; }
-
-.element.Tantalum .element__symbol::before, .element.Ta .element__symbol::before {
-  content: "Ta"; }
-
-.element.Tantalum .element__atomic-number::before, .element.Ta .element__atomic-number::before {
-  content: "73"; }
-
-.element.Tantalum .element__atomic-mass::before, .element.Ta .element__atomic-mass::before {
-  content: "180.94788"; }
-
-.element.Tungsten .element__symbol::before, .element.W .element__symbol::before {
-  content: "W"; }
-
-.element.Tungsten .element__atomic-number::before, .element.W .element__atomic-number::before {
-  content: "74"; }
-
-.element.Tungsten .element__atomic-mass::before, .element.W .element__atomic-mass::before {
-  content: "183.84"; }
-
-.element.Rhenium .element__symbol::before, .element.Re .element__symbol::before {
-  content: "Re"; }
-
-.element.Rhenium .element__atomic-number::before, .element.Re .element__atomic-number::before {
-  content: "75"; }
-
-.element.Rhenium .element__atomic-mass::before, .element.Re .element__atomic-mass::before {
-  content: "186.207"; }
-
-.element.Osmium .element__symbol::before, .element.Os .element__symbol::before {
-  content: "Os"; }
-
-.element.Osmium .element__atomic-number::before, .element.Os .element__atomic-number::before {
-  content: "76"; }
-
-.element.Osmium .element__atomic-mass::before, .element.Os .element__atomic-mass::before {
-  content: "190.23"; }
-
-.element.Iridium .element__symbol::before, .element.Ir .element__symbol::before {
-  content: "Ir"; }
-
-.element.Iridium .element__atomic-number::before, .element.Ir .element__atomic-number::before {
-  content: "77"; }
-
-.element.Iridium .element__atomic-mass::before, .element.Ir .element__atomic-mass::before {
-  content: "192.217"; }
-
-.element.Platinum .element__symbol::before, .element.Pt .element__symbol::before {
-  content: "Pt"; }
-
-.element.Platinum .element__atomic-number::before, .element.Pt .element__atomic-number::before {
-  content: "78"; }
-
-.element.Platinum .element__atomic-mass::before, .element.Pt .element__atomic-mass::before {
-  content: "195.084"; }
-
-.element.Gold .element__symbol::before, .element.Au .element__symbol::before {
-  content: "Au"; }
-
-.element.Gold .element__atomic-number::before, .element.Au .element__atomic-number::before {
-  content: "79"; }
-
-.element.Gold .element__atomic-mass::before, .element.Au .element__atomic-mass::before {
-  content: "196.966569"; }
-
-.element.Mercury .element__symbol::before, .element.Hg .element__symbol::before {
-  content: "Hg"; }
-
-.element.Mercury .element__atomic-number::before, .element.Hg .element__atomic-number::before {
-  content: "80"; }
-
-.element.Mercury .element__atomic-mass::before, .element.Hg .element__atomic-mass::before {
-  content: "200.59"; }
-
-.element.Thallium .element__symbol::before, .element.Tl .element__symbol::before {
-  content: "Tl"; }
-
-.element.Thallium .element__atomic-number::before, .element.Tl .element__atomic-number::before {
-  content: "81"; }
-
-.element.Thallium .element__atomic-mass::before, .element.Tl .element__atomic-mass::before {
-  content: "204.3833"; }
-
-.element.Lead .element__symbol::before, .element.Pb .element__symbol::before {
-  content: "Pb"; }
-
-.element.Lead .element__atomic-number::before, .element.Pb .element__atomic-number::before {
-  content: "82"; }
-
-.element.Lead .element__atomic-mass::before, .element.Pb .element__atomic-mass::before {
-  content: "207.2"; }
-
-.element.Bismuth .element__symbol::before, .element.Bi .element__symbol::before {
-  content: "Bi"; }
-
-.element.Bismuth .element__atomic-number::before, .element.Bi .element__atomic-number::before {
-  content: "83"; }
-
-.element.Bismuth .element__atomic-mass::before, .element.Bi .element__atomic-mass::before {
-  content: "208.98040"; }
-
-.element.Polonium .element__symbol::before, .element.Po .element__symbol::before {
-  content: "Po"; }
-
-.element.Polonium .element__atomic-number::before, .element.Po .element__atomic-number::before {
-  content: "84"; }
-
-.element.Polonium .element__atomic-mass::before, .element.Po .element__atomic-mass::before {
-  content: "[209]"; }
-
-.element.Astatine .element__symbol::before, .element.At .element__symbol::before {
-  content: "At"; }
-
-.element.Astatine .element__atomic-number::before, .element.At .element__atomic-number::before {
-  content: "85"; }
-
-.element.Astatine .element__atomic-mass::before, .element.At .element__atomic-mass::before {
-  content: "[210]"; }
-
-.element.Radon .element__symbol::before, .element.Rn .element__symbol::before {
-  content: "Rn"; }
-
-.element.Radon .element__atomic-number::before, .element.Rn .element__atomic-number::before {
-  content: "86"; }
-
-.element.Radon .element__atomic-mass::before, .element.Rn .element__atomic-mass::before {
-  content: "[222]"; }
-
-.element.Francium .element__symbol::before, .element.Fr .element__symbol::before {
-  content: "Fr"; }
-
-.element.Francium .element__atomic-number::before, .element.Fr .element__atomic-number::before {
-  content: "87"; }
-
-.element.Francium .element__atomic-mass::before, .element.Fr .element__atomic-mass::before {
-  content: "[223]"; }
-
-.element.Radium .element__symbol::before, .element.Ra .element__symbol::before {
-  content: "Ra"; }
-
-.element.Radium .element__atomic-number::before, .element.Ra .element__atomic-number::before {
-  content: "88"; }
-
-.element.Radium .element__atomic-mass::before, .element.Ra .element__atomic-mass::before {
-  content: "[226]"; }
-
-.element.Actinium .element__symbol::before, .element.Ac .element__symbol::before {
-  content: "Ac"; }
-
-.element.Actinium .element__atomic-number::before, .element.Ac .element__atomic-number::before {
-  content: "89"; }
-
-.element.Actinium .element__atomic-mass::before, .element.Ac .element__atomic-mass::before {
-  content: "[227]"; }
-
-.element.Thorium .element__symbol::before, .element.Th .element__symbol::before {
-  content: "Th"; }
-
-.element.Thorium .element__atomic-number::before, .element.Th .element__atomic-number::before {
-  content: "90"; }
-
-.element.Thorium .element__atomic-mass::before, .element.Th .element__atomic-mass::before {
-  content: "232.03806"; }
-
-.element.Protactinium .element__symbol::before, .element.Pa .element__symbol::before {
-  content: "Pa"; }
-
-.element.Protactinium .element__atomic-number::before, .element.Pa .element__atomic-number::before {
-  content: "91"; }
-
-.element.Protactinium .element__atomic-mass::before, .element.Pa .element__atomic-mass::before {
-  content: "231.03588"; }
-
-.element.Uranium .element__symbol::before, .element.U .element__symbol::before {
-  content: "U"; }
-
-.element.Uranium .element__atomic-number::before, .element.U .element__atomic-number::before {
-  content: "92"; }
-
-.element.Uranium .element__atomic-mass::before, .element.U .element__atomic-mass::before {
-  content: "238.02891"; }
-
-.element.Neptunium .element__symbol::before, .element.Np .element__symbol::before {
-  content: "Np"; }
-
-.element.Neptunium .element__atomic-number::before, .element.Np .element__atomic-number::before {
-  content: "93"; }
-
-.element.Neptunium .element__atomic-mass::before, .element.Np .element__atomic-mass::before {
-  content: "[237]"; }
-
-.element.Plutonium .element__symbol::before, .element.Pu .element__symbol::before {
-  content: "Pu"; }
-
-.element.Plutonium .element__atomic-number::before, .element.Pu .element__atomic-number::before {
-  content: "94"; }
-
-.element.Plutonium .element__atomic-mass::before, .element.Pu .element__atomic-mass::before {
-  content: "[244]"; }
-
-.element.Americium .element__symbol::before, .element.Am .element__symbol::before {
-  content: "Am"; }
-
-.element.Americium .element__atomic-number::before, .element.Am .element__atomic-number::before {
-  content: "95"; }
-
-.element.Americium .element__atomic-mass::before, .element.Am .element__atomic-mass::before {
-  content: "[243]"; }
-
-.element.Curium .element__symbol::before, .element.Cm .element__symbol::before {
-  content: "Cm"; }
-
-.element.Curium .element__atomic-number::before, .element.Cm .element__atomic-number::before {
-  content: "96"; }
-
-.element.Curium .element__atomic-mass::before, .element.Cm .element__atomic-mass::before {
-  content: "[247]"; }
-
-.element.Berkelium .element__symbol::before, .element.Bk .element__symbol::before {
-  content: "Bk"; }
-
-.element.Berkelium .element__atomic-number::before, .element.Bk .element__atomic-number::before {
-  content: "97"; }
-
-.element.Berkelium .element__atomic-mass::before, .element.Bk .element__atomic-mass::before {
-  content: "[247]"; }
-
-.element.Californium .element__symbol::before, .element.Cf .element__symbol::before {
-  content: "Cf"; }
-
-.element.Californium .element__atomic-number::before, .element.Cf .element__atomic-number::before {
-  content: "98"; }
-
-.element.Californium .element__atomic-mass::before, .element.Cf .element__atomic-mass::before {
-  content: "[251]"; }
-
-.element.Einsteinium .element__symbol::before, .element.Es .element__symbol::before {
-  content: "Es"; }
-
-.element.Einsteinium .element__atomic-number::before, .element.Es .element__atomic-number::before {
-  content: "99"; }
-
-.element.Einsteinium .element__atomic-mass::before, .element.Es .element__atomic-mass::before {
-  content: "[252]"; }
-
-.element.Fermium .element__symbol::before, .element.Fm .element__symbol::before {
-  content: "Fm"; }
-
-.element.Fermium .element__atomic-number::before, .element.Fm .element__atomic-number::before {
-  content: "100"; }
-
-.element.Fermium .element__atomic-mass::before, .element.Fm .element__atomic-mass::before {
-  content: "[257]"; }
-
-.element.Mendelevium .element__symbol::before, .element.Md .element__symbol::before {
-  content: "Md"; }
-
-.element.Mendelevium .element__atomic-number::before, .element.Md .element__atomic-number::before {
-  content: "101"; }
-
-.element.Mendelevium .element__atomic-mass::before, .element.Md .element__atomic-mass::before {
-  content: "[258]"; }
-
-.element.Nobelium .element__symbol::before, .element.No .element__symbol::before {
-  content: "No"; }
-
-.element.Nobelium .element__atomic-number::before, .element.No .element__atomic-number::before {
-  content: "102"; }
-
-.element.Nobelium .element__atomic-mass::before, .element.No .element__atomic-mass::before {
-  content: "[259]"; }
-
-.element.Lawrencium .element__symbol::before, .element.Lr .element__symbol::before {
-  content: "Lr"; }
-
-.element.Lawrencium .element__atomic-number::before, .element.Lr .element__atomic-number::before {
-  content: "103"; }
-
-.element.Lawrencium .element__atomic-mass::before, .element.Lr .element__atomic-mass::before {
-  content: "[262]"; }
-
-.element.Rutherfordium .element__symbol::before, .element.Rf .element__symbol::before {
-  content: "Rf"; }
-
-.element.Rutherfordium .element__atomic-number::before, .element.Rf .element__atomic-number::before {
-  content: "104"; }
-
-.element.Rutherfordium .element__atomic-mass::before, .element.Rf .element__atomic-mass::before {
-  content: "[267]"; }
-
-.element.Dubnium .element__symbol::before, .element.Db .element__symbol::before {
-  content: "Db"; }
-
-.element.Dubnium .element__atomic-number::before, .element.Db .element__atomic-number::before {
-  content: "105"; }
-
-.element.Dubnium .element__atomic-mass::before, .element.Db .element__atomic-mass::before {
-  content: "[268]"; }
-
-.element.Seaborgium .element__symbol::before, .element.Sg .element__symbol::before {
-  content: "Sg"; }
-
-.element.Seaborgium .element__atomic-number::before, .element.Sg .element__atomic-number::before {
-  content: "106"; }
-
-.element.Seaborgium .element__atomic-mass::before, .element.Sg .element__atomic-mass::before {
-  content: "[271]"; }
-
-.element.Bohrium .element__symbol::before, .element.Bh .element__symbol::before {
-  content: "Bh"; }
-
-.element.Bohrium .element__atomic-number::before, .element.Bh .element__atomic-number::before {
-  content: "107"; }
-
-.element.Bohrium .element__atomic-mass::before, .element.Bh .element__atomic-mass::before {
-  content: "[272]"; }
-
-.element.Hassium .element__symbol::before, .element.Hs .element__symbol::before {
-  content: "Hs"; }
-
-.element.Hassium .element__atomic-number::before, .element.Hs .element__atomic-number::before {
-  content: "108"; }
-
-.element.Hassium .element__atomic-mass::before, .element.Hs .element__atomic-mass::before {
-  content: "[270]"; }
-
-.element.Meitnerium .element__symbol::before, .element.Mt .element__symbol::before {
-  content: "Mt"; }
-
-.element.Meitnerium .element__atomic-number::before, .element.Mt .element__atomic-number::before {
-  content: "109"; }
-
-.element.Meitnerium .element__atomic-mass::before, .element.Mt .element__atomic-mass::before {
-  content: "[276]"; }
-
-.element.Darmstadtium .element__symbol::before, .element.Ds .element__symbol::before {
-  content: "Ds"; }
-
-.element.Darmstadtium .element__atomic-number::before, .element.Ds .element__atomic-number::before {
-  content: "110"; }
-
-.element.Darmstadtium .element__atomic-mass::before, .element.Ds .element__atomic-mass::before {
-  content: "[281]"; }
-
-.element.Roentgenium .element__symbol::before, .element.Rg .element__symbol::before {
-  content: "Rg"; }
-
-.element.Roentgenium .element__atomic-number::before, .element.Rg .element__atomic-number::before {
-  content: "111"; }
-
-.element.Roentgenium .element__atomic-mass::before, .element.Rg .element__atomic-mass::before {
-  content: "[280]"; }
-
-.element.Copernicium .element__symbol::before, .element.Cn .element__symbol::before {
-  content: "Cn"; }
-
-.element.Copernicium .element__atomic-number::before, .element.Cn .element__atomic-number::before {
-  content: "112"; }
-
-.element.Copernicium .element__atomic-mass::before, .element.Cn .element__atomic-mass::before {
-  content: "[285]"; }
-
-.element.Ununtrium .element__symbol::before, .element.Uut .element__symbol::before {
-  content: "Uut"; }
-
-.element.Ununtrium .element__atomic-number::before, .element.Uut .element__atomic-number::before {
-  content: "113"; }
-
-.element.Ununtrium .element__atomic-mass::before, .element.Uut .element__atomic-mass::before {
-  content: "[284]"; }
-
-.element.Ununquadium .element__symbol::before, .element.Uuq .element__symbol::before {
-  content: "Uuq"; }
-
-.element.Ununquadium .element__atomic-number::before, .element.Uuq .element__atomic-number::before {
-  content: "114"; }
-
-.element.Ununquadium .element__atomic-mass::before, .element.Uuq .element__atomic-mass::before {
-  content: "[289]"; }
-
-.element.Ununpentium .element__symbol::before, .element.Uup .element__symbol::before {
-  content: "Uup"; }
-
-.element.Ununpentium .element__atomic-number::before, .element.Uup .element__atomic-number::before {
-  content: "115"; }
-
-.element.Ununpentium .element__atomic-mass::before, .element.Uup .element__atomic-mass::before {
-  content: "[288]"; }
-
-.element.Ununhexium .element__symbol::before, .element.Uuh .element__symbol::before {
-  content: "Uuh"; }
-
-.element.Ununhexium .element__atomic-number::before, .element.Uuh .element__atomic-number::before {
-  content: "116"; }
-
-.element.Ununhexium .element__atomic-mass::before, .element.Uuh .element__atomic-mass::before {
-  content: "[293]"; }
-
-.element.Ununseptium .element__symbol::before, .element.Uus .element__symbol::before {
-  content: "Uus"; }
-
-.element.Ununseptium .element__atomic-number::before, .element.Uus .element__atomic-number::before {
-  content: "117"; }
-
-.element.Ununseptium .element__atomic-mass::before, .element.Uus .element__atomic-mass::before {
-  content: "[294]"; }
-
-.element.Ununoctium .element__symbol::before, .element.Uuo .element__symbol::before {
-  content: "Uuo"; }
-
-.element.Ununoctium .element__atomic-number::before, .element.Uuo .element__atomic-number::before {
-  content: "118"; }
-
-.element.Ununoctium .element__atomic-mass::before, .element.Uuo .element__atomic-mass::before {
-  content: "[294]"; }
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: sans-serif;
+  padding: 1%; }
+  .element .element__atomic-number {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    width: 100%; }
+  .element .element__symbol {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    line-height: 1em;
+    text-align: center;
+    width: 100%; }
+  .element .element__atomic-mass {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    text-align: right;
+    width: 100%; }
+
+.element {
+  width: 100px;
+  height: 100px;
+  font-size: 12.5px; }
+  .element .element__atomic-number, .element .element__atomic-mass {
+    font-size: 1em; }
+  .element .element__symbol {
+    font-size: 5em; }
+  .element.Hydrogen .element__symbol::before, .element.H .element__symbol::before {
+    content: "H"; }
+  .element.Hydrogen .element__atomic-number::before, .element.H .element__atomic-number::before {
+    content: "1"; }
+  .element.Hydrogen .element__atomic-mass::before, .element.H .element__atomic-mass::before {
+    content: "1.00794"; }
+  .element.Helium .element__symbol::before, .element.He .element__symbol::before {
+    content: "He"; }
+  .element.Helium .element__atomic-number::before, .element.He .element__atomic-number::before {
+    content: "2"; }
+  .element.Helium .element__atomic-mass::before, .element.He .element__atomic-mass::before {
+    content: "4.002602"; }
+  .element.Lithium .element__symbol::before, .element.Li .element__symbol::before {
+    content: "Li"; }
+  .element.Lithium .element__atomic-number::before, .element.Li .element__atomic-number::before {
+    content: "3"; }
+  .element.Lithium .element__atomic-mass::before, .element.Li .element__atomic-mass::before {
+    content: "6.941"; }
+  .element.Beryllium .element__symbol::before, .element.Be .element__symbol::before {
+    content: "Be"; }
+  .element.Beryllium .element__atomic-number::before, .element.Be .element__atomic-number::before {
+    content: "4"; }
+  .element.Beryllium .element__atomic-mass::before, .element.Be .element__atomic-mass::before {
+    content: "9.012182"; }
+  .element.Boron .element__symbol::before, .element.B .element__symbol::before {
+    content: "B"; }
+  .element.Boron .element__atomic-number::before, .element.B .element__atomic-number::before {
+    content: "5"; }
+  .element.Boron .element__atomic-mass::before, .element.B .element__atomic-mass::before {
+    content: "10.811"; }
+  .element.Carbon .element__symbol::before, .element.C .element__symbol::before {
+    content: "C"; }
+  .element.Carbon .element__atomic-number::before, .element.C .element__atomic-number::before {
+    content: "6"; }
+  .element.Carbon .element__atomic-mass::before, .element.C .element__atomic-mass::before {
+    content: "12.0107"; }
+  .element.Nitrogen .element__symbol::before, .element.N .element__symbol::before {
+    content: "N"; }
+  .element.Nitrogen .element__atomic-number::before, .element.N .element__atomic-number::before {
+    content: "7"; }
+  .element.Nitrogen .element__atomic-mass::before, .element.N .element__atomic-mass::before {
+    content: "14.0067"; }
+  .element.Oxygen .element__symbol::before, .element.O .element__symbol::before {
+    content: "O"; }
+  .element.Oxygen .element__atomic-number::before, .element.O .element__atomic-number::before {
+    content: "8"; }
+  .element.Oxygen .element__atomic-mass::before, .element.O .element__atomic-mass::before {
+    content: "15.9994"; }
+  .element.Fluorine .element__symbol::before, .element.F .element__symbol::before {
+    content: "F"; }
+  .element.Fluorine .element__atomic-number::before, .element.F .element__atomic-number::before {
+    content: "9"; }
+  .element.Fluorine .element__atomic-mass::before, .element.F .element__atomic-mass::before {
+    content: "18.9984032"; }
+  .element.Neon .element__symbol::before, .element.Ne .element__symbol::before {
+    content: "Ne"; }
+  .element.Neon .element__atomic-number::before, .element.Ne .element__atomic-number::before {
+    content: "10"; }
+  .element.Neon .element__atomic-mass::before, .element.Ne .element__atomic-mass::before {
+    content: "20.1797"; }
+  .element.Sodium .element__symbol::before, .element.Na .element__symbol::before {
+    content: "Na"; }
+  .element.Sodium .element__atomic-number::before, .element.Na .element__atomic-number::before {
+    content: "11"; }
+  .element.Sodium .element__atomic-mass::before, .element.Na .element__atomic-mass::before {
+    content: "22.98976928"; }
+  .element.Magnesium .element__symbol::before, .element.Mg .element__symbol::before {
+    content: "Mg"; }
+  .element.Magnesium .element__atomic-number::before, .element.Mg .element__atomic-number::before {
+    content: "12"; }
+  .element.Magnesium .element__atomic-mass::before, .element.Mg .element__atomic-mass::before {
+    content: "24.3050"; }
+  .element.Aluminum .element__symbol::before, .element.Al .element__symbol::before {
+    content: "Al"; }
+  .element.Aluminum .element__atomic-number::before, .element.Al .element__atomic-number::before {
+    content: "13"; }
+  .element.Aluminum .element__atomic-mass::before, .element.Al .element__atomic-mass::before {
+    content: "26.9815386"; }
+  .element.Silicon .element__symbol::before, .element.Si .element__symbol::before {
+    content: "Si"; }
+  .element.Silicon .element__atomic-number::before, .element.Si .element__atomic-number::before {
+    content: "14"; }
+  .element.Silicon .element__atomic-mass::before, .element.Si .element__atomic-mass::before {
+    content: "28.0855"; }
+  .element.Phosphorus .element__symbol::before, .element.P .element__symbol::before {
+    content: "P"; }
+  .element.Phosphorus .element__atomic-number::before, .element.P .element__atomic-number::before {
+    content: "15"; }
+  .element.Phosphorus .element__atomic-mass::before, .element.P .element__atomic-mass::before {
+    content: "30.973762"; }
+  .element.Sulfur .element__symbol::before, .element.S .element__symbol::before {
+    content: "S"; }
+  .element.Sulfur .element__atomic-number::before, .element.S .element__atomic-number::before {
+    content: "16"; }
+  .element.Sulfur .element__atomic-mass::before, .element.S .element__atomic-mass::before {
+    content: "32.065"; }
+  .element.Chlorine .element__symbol::before, .element.Cl .element__symbol::before {
+    content: "Cl"; }
+  .element.Chlorine .element__atomic-number::before, .element.Cl .element__atomic-number::before {
+    content: "17"; }
+  .element.Chlorine .element__atomic-mass::before, .element.Cl .element__atomic-mass::before {
+    content: "35.453"; }
+  .element.Argon .element__symbol::before, .element.Ar .element__symbol::before {
+    content: "Ar"; }
+  .element.Argon .element__atomic-number::before, .element.Ar .element__atomic-number::before {
+    content: "18"; }
+  .element.Argon .element__atomic-mass::before, .element.Ar .element__atomic-mass::before {
+    content: "39.948"; }
+  .element.Potassium .element__symbol::before, .element.K .element__symbol::before {
+    content: "K"; }
+  .element.Potassium .element__atomic-number::before, .element.K .element__atomic-number::before {
+    content: "19"; }
+  .element.Potassium .element__atomic-mass::before, .element.K .element__atomic-mass::before {
+    content: "39.0983"; }
+  .element.Calcium .element__symbol::before, .element.Ca .element__symbol::before {
+    content: "Ca"; }
+  .element.Calcium .element__atomic-number::before, .element.Ca .element__atomic-number::before {
+    content: "20"; }
+  .element.Calcium .element__atomic-mass::before, .element.Ca .element__atomic-mass::before {
+    content: "40.078"; }
+  .element.Scandium .element__symbol::before, .element.Sc .element__symbol::before {
+    content: "Sc"; }
+  .element.Scandium .element__atomic-number::before, .element.Sc .element__atomic-number::before {
+    content: "21"; }
+  .element.Scandium .element__atomic-mass::before, .element.Sc .element__atomic-mass::before {
+    content: "44.955912"; }
+  .element.Titanium .element__symbol::before, .element.Ti .element__symbol::before {
+    content: "Ti"; }
+  .element.Titanium .element__atomic-number::before, .element.Ti .element__atomic-number::before {
+    content: "22"; }
+  .element.Titanium .element__atomic-mass::before, .element.Ti .element__atomic-mass::before {
+    content: "47.867"; }
+  .element.Vanadium .element__symbol::before, .element.V .element__symbol::before {
+    content: "V"; }
+  .element.Vanadium .element__atomic-number::before, .element.V .element__atomic-number::before {
+    content: "23"; }
+  .element.Vanadium .element__atomic-mass::before, .element.V .element__atomic-mass::before {
+    content: "50.9415"; }
+  .element.Chromium .element__symbol::before, .element.Cr .element__symbol::before {
+    content: "Cr"; }
+  .element.Chromium .element__atomic-number::before, .element.Cr .element__atomic-number::before {
+    content: "24"; }
+  .element.Chromium .element__atomic-mass::before, .element.Cr .element__atomic-mass::before {
+    content: "51.9961"; }
+  .element.Manganese .element__symbol::before, .element.Mn .element__symbol::before {
+    content: "Mn"; }
+  .element.Manganese .element__atomic-number::before, .element.Mn .element__atomic-number::before {
+    content: "25"; }
+  .element.Manganese .element__atomic-mass::before, .element.Mn .element__atomic-mass::before {
+    content: "54.938045"; }
+  .element.Iron .element__symbol::before, .element.Fe .element__symbol::before {
+    content: "Fe"; }
+  .element.Iron .element__atomic-number::before, .element.Fe .element__atomic-number::before {
+    content: "26"; }
+  .element.Iron .element__atomic-mass::before, .element.Fe .element__atomic-mass::before {
+    content: "55.845"; }
+  .element.Cobalt .element__symbol::before, .element.Co .element__symbol::before {
+    content: "Co"; }
+  .element.Cobalt .element__atomic-number::before, .element.Co .element__atomic-number::before {
+    content: "27"; }
+  .element.Cobalt .element__atomic-mass::before, .element.Co .element__atomic-mass::before {
+    content: "58.933195"; }
+  .element.Nickel .element__symbol::before, .element.Ni .element__symbol::before {
+    content: "Ni"; }
+  .element.Nickel .element__atomic-number::before, .element.Ni .element__atomic-number::before {
+    content: "28"; }
+  .element.Nickel .element__atomic-mass::before, .element.Ni .element__atomic-mass::before {
+    content: "58.6934"; }
+  .element.Copper .element__symbol::before, .element.Cu .element__symbol::before {
+    content: "Cu"; }
+  .element.Copper .element__atomic-number::before, .element.Cu .element__atomic-number::before {
+    content: "29"; }
+  .element.Copper .element__atomic-mass::before, .element.Cu .element__atomic-mass::before {
+    content: "63.546"; }
+  .element.Zinc .element__symbol::before, .element.Zn .element__symbol::before {
+    content: "Zn"; }
+  .element.Zinc .element__atomic-number::before, .element.Zn .element__atomic-number::before {
+    content: "30"; }
+  .element.Zinc .element__atomic-mass::before, .element.Zn .element__atomic-mass::before {
+    content: "65.38"; }
+  .element.Gallium .element__symbol::before, .element.Ga .element__symbol::before {
+    content: "Ga"; }
+  .element.Gallium .element__atomic-number::before, .element.Ga .element__atomic-number::before {
+    content: "31"; }
+  .element.Gallium .element__atomic-mass::before, .element.Ga .element__atomic-mass::before {
+    content: "69.723"; }
+  .element.Germanium .element__symbol::before, .element.Ge .element__symbol::before {
+    content: "Ge"; }
+  .element.Germanium .element__atomic-number::before, .element.Ge .element__atomic-number::before {
+    content: "32"; }
+  .element.Germanium .element__atomic-mass::before, .element.Ge .element__atomic-mass::before {
+    content: "72.64"; }
+  .element.Arsenic .element__symbol::before, .element.As .element__symbol::before {
+    content: "As"; }
+  .element.Arsenic .element__atomic-number::before, .element.As .element__atomic-number::before {
+    content: "33"; }
+  .element.Arsenic .element__atomic-mass::before, .element.As .element__atomic-mass::before {
+    content: "74.92160"; }
+  .element.Selenium .element__symbol::before, .element.Se .element__symbol::before {
+    content: "Se"; }
+  .element.Selenium .element__atomic-number::before, .element.Se .element__atomic-number::before {
+    content: "34"; }
+  .element.Selenium .element__atomic-mass::before, .element.Se .element__atomic-mass::before {
+    content: "78.96"; }
+  .element.Bromine .element__symbol::before, .element.Br .element__symbol::before {
+    content: "Br"; }
+  .element.Bromine .element__atomic-number::before, .element.Br .element__atomic-number::before {
+    content: "35"; }
+  .element.Bromine .element__atomic-mass::before, .element.Br .element__atomic-mass::before {
+    content: "79.904"; }
+  .element.Krypton .element__symbol::before, .element.Kr .element__symbol::before {
+    content: "Kr"; }
+  .element.Krypton .element__atomic-number::before, .element.Kr .element__atomic-number::before {
+    content: "36"; }
+  .element.Krypton .element__atomic-mass::before, .element.Kr .element__atomic-mass::before {
+    content: "83.798"; }
+  .element.Rubidium .element__symbol::before, .element.Rb .element__symbol::before {
+    content: "Rb"; }
+  .element.Rubidium .element__atomic-number::before, .element.Rb .element__atomic-number::before {
+    content: "37"; }
+  .element.Rubidium .element__atomic-mass::before, .element.Rb .element__atomic-mass::before {
+    content: "85.4678"; }
+  .element.Strontium .element__symbol::before, .element.Sr .element__symbol::before {
+    content: "Sr"; }
+  .element.Strontium .element__atomic-number::before, .element.Sr .element__atomic-number::before {
+    content: "38"; }
+  .element.Strontium .element__atomic-mass::before, .element.Sr .element__atomic-mass::before {
+    content: "87.62"; }
+  .element.Yttrium .element__symbol::before, .element.Y .element__symbol::before {
+    content: "Y"; }
+  .element.Yttrium .element__atomic-number::before, .element.Y .element__atomic-number::before {
+    content: "39"; }
+  .element.Yttrium .element__atomic-mass::before, .element.Y .element__atomic-mass::before {
+    content: "88.90585"; }
+  .element.Zirconium .element__symbol::before, .element.Zr .element__symbol::before {
+    content: "Zr"; }
+  .element.Zirconium .element__atomic-number::before, .element.Zr .element__atomic-number::before {
+    content: "40"; }
+  .element.Zirconium .element__atomic-mass::before, .element.Zr .element__atomic-mass::before {
+    content: "91.224"; }
+  .element.Niobium .element__symbol::before, .element.Nb .element__symbol::before {
+    content: "Nb"; }
+  .element.Niobium .element__atomic-number::before, .element.Nb .element__atomic-number::before {
+    content: "41"; }
+  .element.Niobium .element__atomic-mass::before, .element.Nb .element__atomic-mass::before {
+    content: "92.90638"; }
+  .element.Molybdenum .element__symbol::before, .element.Mo .element__symbol::before {
+    content: "Mo"; }
+  .element.Molybdenum .element__atomic-number::before, .element.Mo .element__atomic-number::before {
+    content: "42"; }
+  .element.Molybdenum .element__atomic-mass::before, .element.Mo .element__atomic-mass::before {
+    content: "95.96"; }
+  .element.Technetium .element__symbol::before, .element.Tc .element__symbol::before {
+    content: "Tc"; }
+  .element.Technetium .element__atomic-number::before, .element.Tc .element__atomic-number::before {
+    content: "43"; }
+  .element.Technetium .element__atomic-mass::before, .element.Tc .element__atomic-mass::before {
+    content: "[98]"; }
+  .element.Ruthenium .element__symbol::before, .element.Ru .element__symbol::before {
+    content: "Ru"; }
+  .element.Ruthenium .element__atomic-number::before, .element.Ru .element__atomic-number::before {
+    content: "44"; }
+  .element.Ruthenium .element__atomic-mass::before, .element.Ru .element__atomic-mass::before {
+    content: "101.07"; }
+  .element.Rhodium .element__symbol::before, .element.Rh .element__symbol::before {
+    content: "Rh"; }
+  .element.Rhodium .element__atomic-number::before, .element.Rh .element__atomic-number::before {
+    content: "45"; }
+  .element.Rhodium .element__atomic-mass::before, .element.Rh .element__atomic-mass::before {
+    content: "102.90550"; }
+  .element.Palladium .element__symbol::before, .element.Pd .element__symbol::before {
+    content: "Pd"; }
+  .element.Palladium .element__atomic-number::before, .element.Pd .element__atomic-number::before {
+    content: "46"; }
+  .element.Palladium .element__atomic-mass::before, .element.Pd .element__atomic-mass::before {
+    content: "106.42"; }
+  .element.Silver .element__symbol::before, .element.Ag .element__symbol::before {
+    content: "Ag"; }
+  .element.Silver .element__atomic-number::before, .element.Ag .element__atomic-number::before {
+    content: "47"; }
+  .element.Silver .element__atomic-mass::before, .element.Ag .element__atomic-mass::before {
+    content: "107.8682"; }
+  .element.Cadmium .element__symbol::before, .element.Cd .element__symbol::before {
+    content: "Cd"; }
+  .element.Cadmium .element__atomic-number::before, .element.Cd .element__atomic-number::before {
+    content: "48"; }
+  .element.Cadmium .element__atomic-mass::before, .element.Cd .element__atomic-mass::before {
+    content: "112.411"; }
+  .element.Indium .element__symbol::before, .element.In .element__symbol::before {
+    content: "In"; }
+  .element.Indium .element__atomic-number::before, .element.In .element__atomic-number::before {
+    content: "49"; }
+  .element.Indium .element__atomic-mass::before, .element.In .element__atomic-mass::before {
+    content: "114.818"; }
+  .element.Tin .element__symbol::before, .element.Sn .element__symbol::before {
+    content: "Sn"; }
+  .element.Tin .element__atomic-number::before, .element.Sn .element__atomic-number::before {
+    content: "50"; }
+  .element.Tin .element__atomic-mass::before, .element.Sn .element__atomic-mass::before {
+    content: "118.710"; }
+  .element.Antimony .element__symbol::before, .element.Sb .element__symbol::before {
+    content: "Sb"; }
+  .element.Antimony .element__atomic-number::before, .element.Sb .element__atomic-number::before {
+    content: "51"; }
+  .element.Antimony .element__atomic-mass::before, .element.Sb .element__atomic-mass::before {
+    content: "121.760"; }
+  .element.Tellurium .element__symbol::before, .element.Te .element__symbol::before {
+    content: "Te"; }
+  .element.Tellurium .element__atomic-number::before, .element.Te .element__atomic-number::before {
+    content: "52"; }
+  .element.Tellurium .element__atomic-mass::before, .element.Te .element__atomic-mass::before {
+    content: "127.60"; }
+  .element.Iodine .element__symbol::before, .element.I .element__symbol::before {
+    content: "I"; }
+  .element.Iodine .element__atomic-number::before, .element.I .element__atomic-number::before {
+    content: "53"; }
+  .element.Iodine .element__atomic-mass::before, .element.I .element__atomic-mass::before {
+    content: "126.90447"; }
+  .element.Xenon .element__symbol::before, .element.Xe .element__symbol::before {
+    content: "Xe"; }
+  .element.Xenon .element__atomic-number::before, .element.Xe .element__atomic-number::before {
+    content: "54"; }
+  .element.Xenon .element__atomic-mass::before, .element.Xe .element__atomic-mass::before {
+    content: "131.293"; }
+  .element.Cesium .element__symbol::before, .element.Cs .element__symbol::before {
+    content: "Cs"; }
+  .element.Cesium .element__atomic-number::before, .element.Cs .element__atomic-number::before {
+    content: "55"; }
+  .element.Cesium .element__atomic-mass::before, .element.Cs .element__atomic-mass::before {
+    content: "132.9054519"; }
+  .element.Barium .element__symbol::before, .element.Ba .element__symbol::before {
+    content: "Ba"; }
+  .element.Barium .element__atomic-number::before, .element.Ba .element__atomic-number::before {
+    content: "56"; }
+  .element.Barium .element__atomic-mass::before, .element.Ba .element__atomic-mass::before {
+    content: "137.327"; }
+  .element.Lanthanum .element__symbol::before, .element.La .element__symbol::before {
+    content: "La"; }
+  .element.Lanthanum .element__atomic-number::before, .element.La .element__atomic-number::before {
+    content: "57"; }
+  .element.Lanthanum .element__atomic-mass::before, .element.La .element__atomic-mass::before {
+    content: "138.90547"; }
+  .element.Cerium .element__symbol::before, .element.Ce .element__symbol::before {
+    content: "Ce"; }
+  .element.Cerium .element__atomic-number::before, .element.Ce .element__atomic-number::before {
+    content: "58"; }
+  .element.Cerium .element__atomic-mass::before, .element.Ce .element__atomic-mass::before {
+    content: "140.116"; }
+  .element.Praseodymium .element__symbol::before, .element.Pr .element__symbol::before {
+    content: "Pr"; }
+  .element.Praseodymium .element__atomic-number::before, .element.Pr .element__atomic-number::before {
+    content: "59"; }
+  .element.Praseodymium .element__atomic-mass::before, .element.Pr .element__atomic-mass::before {
+    content: "140.90765"; }
+  .element.Neodymium .element__symbol::before, .element.Nd .element__symbol::before {
+    content: "Nd"; }
+  .element.Neodymium .element__atomic-number::before, .element.Nd .element__atomic-number::before {
+    content: "60"; }
+  .element.Neodymium .element__atomic-mass::before, .element.Nd .element__atomic-mass::before {
+    content: "144.242"; }
+  .element.Promethium .element__symbol::before, .element.Pm .element__symbol::before {
+    content: "Pm"; }
+  .element.Promethium .element__atomic-number::before, .element.Pm .element__atomic-number::before {
+    content: "61"; }
+  .element.Promethium .element__atomic-mass::before, .element.Pm .element__atomic-mass::before {
+    content: "[145]"; }
+  .element.Samarium .element__symbol::before, .element.Sm .element__symbol::before {
+    content: "Sm"; }
+  .element.Samarium .element__atomic-number::before, .element.Sm .element__atomic-number::before {
+    content: "62"; }
+  .element.Samarium .element__atomic-mass::before, .element.Sm .element__atomic-mass::before {
+    content: "150.36"; }
+  .element.Europium .element__symbol::before, .element.Eu .element__symbol::before {
+    content: "Eu"; }
+  .element.Europium .element__atomic-number::before, .element.Eu .element__atomic-number::before {
+    content: "63"; }
+  .element.Europium .element__atomic-mass::before, .element.Eu .element__atomic-mass::before {
+    content: "151.964"; }
+  .element.Gadolinium .element__symbol::before, .element.Gd .element__symbol::before {
+    content: "Gd"; }
+  .element.Gadolinium .element__atomic-number::before, .element.Gd .element__atomic-number::before {
+    content: "64"; }
+  .element.Gadolinium .element__atomic-mass::before, .element.Gd .element__atomic-mass::before {
+    content: "157.25"; }
+  .element.Terbium .element__symbol::before, .element.Tb .element__symbol::before {
+    content: "Tb"; }
+  .element.Terbium .element__atomic-number::before, .element.Tb .element__atomic-number::before {
+    content: "65"; }
+  .element.Terbium .element__atomic-mass::before, .element.Tb .element__atomic-mass::before {
+    content: "158.92535"; }
+  .element.Dysprosium .element__symbol::before, .element.Dy .element__symbol::before {
+    content: "Dy"; }
+  .element.Dysprosium .element__atomic-number::before, .element.Dy .element__atomic-number::before {
+    content: "66"; }
+  .element.Dysprosium .element__atomic-mass::before, .element.Dy .element__atomic-mass::before {
+    content: "162.500"; }
+  .element.Holmium .element__symbol::before, .element.Ho .element__symbol::before {
+    content: "Ho"; }
+  .element.Holmium .element__atomic-number::before, .element.Ho .element__atomic-number::before {
+    content: "67"; }
+  .element.Holmium .element__atomic-mass::before, .element.Ho .element__atomic-mass::before {
+    content: "164.93032"; }
+  .element.Erbium .element__symbol::before, .element.Er .element__symbol::before {
+    content: "Er"; }
+  .element.Erbium .element__atomic-number::before, .element.Er .element__atomic-number::before {
+    content: "68"; }
+  .element.Erbium .element__atomic-mass::before, .element.Er .element__atomic-mass::before {
+    content: "167.259"; }
+  .element.Thulium .element__symbol::before, .element.Tm .element__symbol::before {
+    content: "Tm"; }
+  .element.Thulium .element__atomic-number::before, .element.Tm .element__atomic-number::before {
+    content: "69"; }
+  .element.Thulium .element__atomic-mass::before, .element.Tm .element__atomic-mass::before {
+    content: "168.93421"; }
+  .element.Ytterbium .element__symbol::before, .element.Yb .element__symbol::before {
+    content: "Yb"; }
+  .element.Ytterbium .element__atomic-number::before, .element.Yb .element__atomic-number::before {
+    content: "70"; }
+  .element.Ytterbium .element__atomic-mass::before, .element.Yb .element__atomic-mass::before {
+    content: "173.054"; }
+  .element.Lutetium .element__symbol::before, .element.Lu .element__symbol::before {
+    content: "Lu"; }
+  .element.Lutetium .element__atomic-number::before, .element.Lu .element__atomic-number::before {
+    content: "71"; }
+  .element.Lutetium .element__atomic-mass::before, .element.Lu .element__atomic-mass::before {
+    content: "174.9668"; }
+  .element.Hafnium .element__symbol::before, .element.Hf .element__symbol::before {
+    content: "Hf"; }
+  .element.Hafnium .element__atomic-number::before, .element.Hf .element__atomic-number::before {
+    content: "72"; }
+  .element.Hafnium .element__atomic-mass::before, .element.Hf .element__atomic-mass::before {
+    content: "178.49"; }
+  .element.Tantalum .element__symbol::before, .element.Ta .element__symbol::before {
+    content: "Ta"; }
+  .element.Tantalum .element__atomic-number::before, .element.Ta .element__atomic-number::before {
+    content: "73"; }
+  .element.Tantalum .element__atomic-mass::before, .element.Ta .element__atomic-mass::before {
+    content: "180.94788"; }
+  .element.Tungsten .element__symbol::before, .element.W .element__symbol::before {
+    content: "W"; }
+  .element.Tungsten .element__atomic-number::before, .element.W .element__atomic-number::before {
+    content: "74"; }
+  .element.Tungsten .element__atomic-mass::before, .element.W .element__atomic-mass::before {
+    content: "183.84"; }
+  .element.Rhenium .element__symbol::before, .element.Re .element__symbol::before {
+    content: "Re"; }
+  .element.Rhenium .element__atomic-number::before, .element.Re .element__atomic-number::before {
+    content: "75"; }
+  .element.Rhenium .element__atomic-mass::before, .element.Re .element__atomic-mass::before {
+    content: "186.207"; }
+  .element.Osmium .element__symbol::before, .element.Os .element__symbol::before {
+    content: "Os"; }
+  .element.Osmium .element__atomic-number::before, .element.Os .element__atomic-number::before {
+    content: "76"; }
+  .element.Osmium .element__atomic-mass::before, .element.Os .element__atomic-mass::before {
+    content: "190.23"; }
+  .element.Iridium .element__symbol::before, .element.Ir .element__symbol::before {
+    content: "Ir"; }
+  .element.Iridium .element__atomic-number::before, .element.Ir .element__atomic-number::before {
+    content: "77"; }
+  .element.Iridium .element__atomic-mass::before, .element.Ir .element__atomic-mass::before {
+    content: "192.217"; }
+  .element.Platinum .element__symbol::before, .element.Pt .element__symbol::before {
+    content: "Pt"; }
+  .element.Platinum .element__atomic-number::before, .element.Pt .element__atomic-number::before {
+    content: "78"; }
+  .element.Platinum .element__atomic-mass::before, .element.Pt .element__atomic-mass::before {
+    content: "195.084"; }
+  .element.Gold .element__symbol::before, .element.Au .element__symbol::before {
+    content: "Au"; }
+  .element.Gold .element__atomic-number::before, .element.Au .element__atomic-number::before {
+    content: "79"; }
+  .element.Gold .element__atomic-mass::before, .element.Au .element__atomic-mass::before {
+    content: "196.966569"; }
+  .element.Mercury .element__symbol::before, .element.Hg .element__symbol::before {
+    content: "Hg"; }
+  .element.Mercury .element__atomic-number::before, .element.Hg .element__atomic-number::before {
+    content: "80"; }
+  .element.Mercury .element__atomic-mass::before, .element.Hg .element__atomic-mass::before {
+    content: "200.59"; }
+  .element.Thallium .element__symbol::before, .element.Tl .element__symbol::before {
+    content: "Tl"; }
+  .element.Thallium .element__atomic-number::before, .element.Tl .element__atomic-number::before {
+    content: "81"; }
+  .element.Thallium .element__atomic-mass::before, .element.Tl .element__atomic-mass::before {
+    content: "204.3833"; }
+  .element.Lead .element__symbol::before, .element.Pb .element__symbol::before {
+    content: "Pb"; }
+  .element.Lead .element__atomic-number::before, .element.Pb .element__atomic-number::before {
+    content: "82"; }
+  .element.Lead .element__atomic-mass::before, .element.Pb .element__atomic-mass::before {
+    content: "207.2"; }
+  .element.Bismuth .element__symbol::before, .element.Bi .element__symbol::before {
+    content: "Bi"; }
+  .element.Bismuth .element__atomic-number::before, .element.Bi .element__atomic-number::before {
+    content: "83"; }
+  .element.Bismuth .element__atomic-mass::before, .element.Bi .element__atomic-mass::before {
+    content: "208.98040"; }
+  .element.Polonium .element__symbol::before, .element.Po .element__symbol::before {
+    content: "Po"; }
+  .element.Polonium .element__atomic-number::before, .element.Po .element__atomic-number::before {
+    content: "84"; }
+  .element.Polonium .element__atomic-mass::before, .element.Po .element__atomic-mass::before {
+    content: "[209]"; }
+  .element.Astatine .element__symbol::before, .element.At .element__symbol::before {
+    content: "At"; }
+  .element.Astatine .element__atomic-number::before, .element.At .element__atomic-number::before {
+    content: "85"; }
+  .element.Astatine .element__atomic-mass::before, .element.At .element__atomic-mass::before {
+    content: "[210]"; }
+  .element.Radon .element__symbol::before, .element.Rn .element__symbol::before {
+    content: "Rn"; }
+  .element.Radon .element__atomic-number::before, .element.Rn .element__atomic-number::before {
+    content: "86"; }
+  .element.Radon .element__atomic-mass::before, .element.Rn .element__atomic-mass::before {
+    content: "[222]"; }
+  .element.Francium .element__symbol::before, .element.Fr .element__symbol::before {
+    content: "Fr"; }
+  .element.Francium .element__atomic-number::before, .element.Fr .element__atomic-number::before {
+    content: "87"; }
+  .element.Francium .element__atomic-mass::before, .element.Fr .element__atomic-mass::before {
+    content: "[223]"; }
+  .element.Radium .element__symbol::before, .element.Ra .element__symbol::before {
+    content: "Ra"; }
+  .element.Radium .element__atomic-number::before, .element.Ra .element__atomic-number::before {
+    content: "88"; }
+  .element.Radium .element__atomic-mass::before, .element.Ra .element__atomic-mass::before {
+    content: "[226]"; }
+  .element.Actinium .element__symbol::before, .element.Ac .element__symbol::before {
+    content: "Ac"; }
+  .element.Actinium .element__atomic-number::before, .element.Ac .element__atomic-number::before {
+    content: "89"; }
+  .element.Actinium .element__atomic-mass::before, .element.Ac .element__atomic-mass::before {
+    content: "[227]"; }
+  .element.Thorium .element__symbol::before, .element.Th .element__symbol::before {
+    content: "Th"; }
+  .element.Thorium .element__atomic-number::before, .element.Th .element__atomic-number::before {
+    content: "90"; }
+  .element.Thorium .element__atomic-mass::before, .element.Th .element__atomic-mass::before {
+    content: "232.03806"; }
+  .element.Protactinium .element__symbol::before, .element.Pa .element__symbol::before {
+    content: "Pa"; }
+  .element.Protactinium .element__atomic-number::before, .element.Pa .element__atomic-number::before {
+    content: "91"; }
+  .element.Protactinium .element__atomic-mass::before, .element.Pa .element__atomic-mass::before {
+    content: "231.03588"; }
+  .element.Uranium .element__symbol::before, .element.U .element__symbol::before {
+    content: "U"; }
+  .element.Uranium .element__atomic-number::before, .element.U .element__atomic-number::before {
+    content: "92"; }
+  .element.Uranium .element__atomic-mass::before, .element.U .element__atomic-mass::before {
+    content: "238.02891"; }
+  .element.Neptunium .element__symbol::before, .element.Np .element__symbol::before {
+    content: "Np"; }
+  .element.Neptunium .element__atomic-number::before, .element.Np .element__atomic-number::before {
+    content: "93"; }
+  .element.Neptunium .element__atomic-mass::before, .element.Np .element__atomic-mass::before {
+    content: "[237]"; }
+  .element.Plutonium .element__symbol::before, .element.Pu .element__symbol::before {
+    content: "Pu"; }
+  .element.Plutonium .element__atomic-number::before, .element.Pu .element__atomic-number::before {
+    content: "94"; }
+  .element.Plutonium .element__atomic-mass::before, .element.Pu .element__atomic-mass::before {
+    content: "[244]"; }
+  .element.Americium .element__symbol::before, .element.Am .element__symbol::before {
+    content: "Am"; }
+  .element.Americium .element__atomic-number::before, .element.Am .element__atomic-number::before {
+    content: "95"; }
+  .element.Americium .element__atomic-mass::before, .element.Am .element__atomic-mass::before {
+    content: "[243]"; }
+  .element.Curium .element__symbol::before, .element.Cm .element__symbol::before {
+    content: "Cm"; }
+  .element.Curium .element__atomic-number::before, .element.Cm .element__atomic-number::before {
+    content: "96"; }
+  .element.Curium .element__atomic-mass::before, .element.Cm .element__atomic-mass::before {
+    content: "[247]"; }
+  .element.Berkelium .element__symbol::before, .element.Bk .element__symbol::before {
+    content: "Bk"; }
+  .element.Berkelium .element__atomic-number::before, .element.Bk .element__atomic-number::before {
+    content: "97"; }
+  .element.Berkelium .element__atomic-mass::before, .element.Bk .element__atomic-mass::before {
+    content: "[247]"; }
+  .element.Californium .element__symbol::before, .element.Cf .element__symbol::before {
+    content: "Cf"; }
+  .element.Californium .element__atomic-number::before, .element.Cf .element__atomic-number::before {
+    content: "98"; }
+  .element.Californium .element__atomic-mass::before, .element.Cf .element__atomic-mass::before {
+    content: "[251]"; }
+  .element.Einsteinium .element__symbol::before, .element.Es .element__symbol::before {
+    content: "Es"; }
+  .element.Einsteinium .element__atomic-number::before, .element.Es .element__atomic-number::before {
+    content: "99"; }
+  .element.Einsteinium .element__atomic-mass::before, .element.Es .element__atomic-mass::before {
+    content: "[252]"; }
+  .element.Fermium .element__symbol::before, .element.Fm .element__symbol::before {
+    content: "Fm"; }
+  .element.Fermium .element__atomic-number::before, .element.Fm .element__atomic-number::before {
+    content: "100"; }
+  .element.Fermium .element__atomic-mass::before, .element.Fm .element__atomic-mass::before {
+    content: "[257]"; }
+  .element.Mendelevium .element__symbol::before, .element.Md .element__symbol::before {
+    content: "Md"; }
+  .element.Mendelevium .element__atomic-number::before, .element.Md .element__atomic-number::before {
+    content: "101"; }
+  .element.Mendelevium .element__atomic-mass::before, .element.Md .element__atomic-mass::before {
+    content: "[258]"; }
+  .element.Nobelium .element__symbol::before, .element.No .element__symbol::before {
+    content: "No"; }
+  .element.Nobelium .element__atomic-number::before, .element.No .element__atomic-number::before {
+    content: "102"; }
+  .element.Nobelium .element__atomic-mass::before, .element.No .element__atomic-mass::before {
+    content: "[259]"; }
+  .element.Lawrencium .element__symbol::before, .element.Lr .element__symbol::before {
+    content: "Lr"; }
+  .element.Lawrencium .element__atomic-number::before, .element.Lr .element__atomic-number::before {
+    content: "103"; }
+  .element.Lawrencium .element__atomic-mass::before, .element.Lr .element__atomic-mass::before {
+    content: "[262]"; }
+  .element.Rutherfordium .element__symbol::before, .element.Rf .element__symbol::before {
+    content: "Rf"; }
+  .element.Rutherfordium .element__atomic-number::before, .element.Rf .element__atomic-number::before {
+    content: "104"; }
+  .element.Rutherfordium .element__atomic-mass::before, .element.Rf .element__atomic-mass::before {
+    content: "[267]"; }
+  .element.Dubnium .element__symbol::before, .element.Db .element__symbol::before {
+    content: "Db"; }
+  .element.Dubnium .element__atomic-number::before, .element.Db .element__atomic-number::before {
+    content: "105"; }
+  .element.Dubnium .element__atomic-mass::before, .element.Db .element__atomic-mass::before {
+    content: "[268]"; }
+  .element.Seaborgium .element__symbol::before, .element.Sg .element__symbol::before {
+    content: "Sg"; }
+  .element.Seaborgium .element__atomic-number::before, .element.Sg .element__atomic-number::before {
+    content: "106"; }
+  .element.Seaborgium .element__atomic-mass::before, .element.Sg .element__atomic-mass::before {
+    content: "[271]"; }
+  .element.Bohrium .element__symbol::before, .element.Bh .element__symbol::before {
+    content: "Bh"; }
+  .element.Bohrium .element__atomic-number::before, .element.Bh .element__atomic-number::before {
+    content: "107"; }
+  .element.Bohrium .element__atomic-mass::before, .element.Bh .element__atomic-mass::before {
+    content: "[272]"; }
+  .element.Hassium .element__symbol::before, .element.Hs .element__symbol::before {
+    content: "Hs"; }
+  .element.Hassium .element__atomic-number::before, .element.Hs .element__atomic-number::before {
+    content: "108"; }
+  .element.Hassium .element__atomic-mass::before, .element.Hs .element__atomic-mass::before {
+    content: "[270]"; }
+  .element.Meitnerium .element__symbol::before, .element.Mt .element__symbol::before {
+    content: "Mt"; }
+  .element.Meitnerium .element__atomic-number::before, .element.Mt .element__atomic-number::before {
+    content: "109"; }
+  .element.Meitnerium .element__atomic-mass::before, .element.Mt .element__atomic-mass::before {
+    content: "[276]"; }
+  .element.Darmstadtium .element__symbol::before, .element.Ds .element__symbol::before {
+    content: "Ds"; }
+  .element.Darmstadtium .element__atomic-number::before, .element.Ds .element__atomic-number::before {
+    content: "110"; }
+  .element.Darmstadtium .element__atomic-mass::before, .element.Ds .element__atomic-mass::before {
+    content: "[281]"; }
+  .element.Roentgenium .element__symbol::before, .element.Rg .element__symbol::before {
+    content: "Rg"; }
+  .element.Roentgenium .element__atomic-number::before, .element.Rg .element__atomic-number::before {
+    content: "111"; }
+  .element.Roentgenium .element__atomic-mass::before, .element.Rg .element__atomic-mass::before {
+    content: "[280]"; }
+  .element.Copernicium .element__symbol::before, .element.Cn .element__symbol::before {
+    content: "Cn"; }
+  .element.Copernicium .element__atomic-number::before, .element.Cn .element__atomic-number::before {
+    content: "112"; }
+  .element.Copernicium .element__atomic-mass::before, .element.Cn .element__atomic-mass::before {
+    content: "[285]"; }
+  .element.Ununtrium .element__symbol::before, .element.Uut .element__symbol::before {
+    content: "Uut"; }
+  .element.Ununtrium .element__atomic-number::before, .element.Uut .element__atomic-number::before {
+    content: "113"; }
+  .element.Ununtrium .element__atomic-mass::before, .element.Uut .element__atomic-mass::before {
+    content: "[284]"; }
+  .element.Ununquadium .element__symbol::before, .element.Uuq .element__symbol::before {
+    content: "Uuq"; }
+  .element.Ununquadium .element__atomic-number::before, .element.Uuq .element__atomic-number::before {
+    content: "114"; }
+  .element.Ununquadium .element__atomic-mass::before, .element.Uuq .element__atomic-mass::before {
+    content: "[289]"; }
+  .element.Ununpentium .element__symbol::before, .element.Uup .element__symbol::before {
+    content: "Uup"; }
+  .element.Ununpentium .element__atomic-number::before, .element.Uup .element__atomic-number::before {
+    content: "115"; }
+  .element.Ununpentium .element__atomic-mass::before, .element.Uup .element__atomic-mass::before {
+    content: "[288]"; }
+  .element.Ununhexium .element__symbol::before, .element.Uuh .element__symbol::before {
+    content: "Uuh"; }
+  .element.Ununhexium .element__atomic-number::before, .element.Uuh .element__atomic-number::before {
+    content: "116"; }
+  .element.Ununhexium .element__atomic-mass::before, .element.Uuh .element__atomic-mass::before {
+    content: "[293]"; }
+  .element.Ununseptium .element__symbol::before, .element.Uus .element__symbol::before {
+    content: "Uus"; }
+  .element.Ununseptium .element__atomic-number::before, .element.Uus .element__atomic-number::before {
+    content: "117"; }
+  .element.Ununseptium .element__atomic-mass::before, .element.Uus .element__atomic-mass::before {
+    content: "[294]"; }
+  .element.Ununoctium .element__symbol::before, .element.Uuo .element__symbol::before {
+    content: "Uuo"; }
+  .element.Ununoctium .element__atomic-number::before, .element.Uuo .element__atomic-number::before {
+    content: "118"; }
+  .element.Ununoctium .element__atomic-mass::before, .element.Uuo .element__atomic-mass::before {
+    content: "[294]"; }

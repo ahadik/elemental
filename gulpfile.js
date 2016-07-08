@@ -34,6 +34,7 @@ gulp.task('lib-scss', function() {
     .pipe(sass())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(prefix())
+    .pipe(gulp.dest('source/css'))
     .pipe(cssmin())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(rename({ suffix: '.min' }))
