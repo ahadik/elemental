@@ -77,3 +77,5 @@ While you can reference the data and styling for an element in your markup using
 
 ##Contributing
 Please feel free to contribute to this repository! Any and all improvements are welcome, be it structural, visual, or just correcting/adding data. This repository works off of two branches, `master` and `distribution`. The `master` branch contains additional scripts and dependencies for working on the project. The `distribution` branch contains only the compiled CSS and source SASS for the bower dependency. Submit PRs for the `master` branch which will be merged into `distribution` once the PR is accepted.
+
+The raw data for the elements is contained in a CSV (`elements.csv`) found in the root of the `master` branch. Make changes to the data there. To test your changes, use the Python script also found in the root of `master`, (`converter.py`). The Python script writes the SASS map to the source SASS file (`scss/_elements.scss`).
