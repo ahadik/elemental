@@ -6,6 +6,9 @@
 ##What This Is
 If you've got a web project that needs to display the blocks of the periodic table, this SASS library makes it easy to do just that. All you need to do is provide some super simple markup, and then make use of either the compiled Elemental CSS or SASS mixins.
 
+##Installation
+Elemental is a registered Bower package. Install using `bower install Elemental` and watch out for the capitalization while I work out a small name dispute. This will download only compiled CSS and the source SASS. To contribute, fork the `master` branch and work from there to get access to the raw data and scripts.
+
 ##How To Use It
 
 ######Markup
