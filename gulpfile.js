@@ -28,19 +28,19 @@ gulp.task('lib-scss', function() {
       this.emit('end');
   };
 
-  return gulp.src('source/scss/**/*.scss')
+  return gulp.src('scss/**/*.scss')
     .pipe(plumber({errorHandler: onError}))
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(prefix())
-    .pipe(gulp.dest('source/css'))
+    .pipe(gulp.dest('css'))
     .pipe(cssmin())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('source/css'))
-    .pipe(gulp.dest('site/css'))
+    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('css'))
     .pipe(reload({stream:true}));
 });
 
@@ -55,30 +55,25 @@ gulp.task('site-scss', function() {
       this.emit('end');
   };
 
-  return gulp.src('site/scss/**/*.scss')
+  return gulp.src('scss/**/*.scss')
     .pipe(plumber({errorHandler: onError}))
     .pipe(sass())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(prefix())
-    .pipe(gulp.dest('site/css'))
+    .pipe(gulp.dest('./css'))
     .pipe(reload({stream:true}))
     .pipe(cssmin())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('site/css'));
+    .pipe(gulp.dest('css'));
 });
 
 gulp.task('browser-sync', function() {
     browserSync({
         server: {
-            baseDir: "site"
+            baseDir: "."
         }
     });
-});
-
-gulp.task('deploy', function () {
-    return gulp.src('site/**/*')
-        .pipe(deploy());
 });
 
 gulp.task('sass-lint', function () {
@@ -90,8 +85,8 @@ gulp.task('sass-lint', function () {
 
 
 gulp.task('watch', function() {
-  gulp.watch('source/scss/**/*.scss', ['lib-scss', 'site-scss', 'sass-lint']);
-  gulp.watch('source/**/*.html', ['minify-html']);
+  gulp.watch('scss/**/*.scss', ['lib-scss', 'site-scss', 'sass-lint']);
+  gulp.watch('**/*.html', ['minify-html']);
 });
 
 
@@ -107,9 +102,9 @@ gulp.task('minify-html', function() {
       spare:true
     };
 
-  gulp.src('source/*.html')
+  gulp.src('*.html')
     .pipe(minifyHTML(opts))
-    .pipe(gulp.dest('site/'));
+    .pipe(gulp.dest('./'));
     reload();
 });
 
