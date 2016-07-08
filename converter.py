@@ -15,5 +15,5 @@ with open('elements.csv', 'rb') as csvfile:
 		row[-1] = row[-1].replace('+', '')
 		sassString = sassString + '\t\t' + header[-1] + ' : #' + row[-1] + '\n\t),\n'
 	sassString = sassString[:-2] + '\n);'
-	with open('source/scss/_elements.scss', 'wb') as f:
+	with open('out.txt', 'wb') as f:
 		f.write(sassString)
