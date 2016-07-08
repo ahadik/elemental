@@ -28,7 +28,7 @@ This markup generates the following block provided the proper styling is include
 
 <img width="242" alt="Aluminum" src="https://cloud.githubusercontent.com/assets/3239506/16701937/a16dddc2-4528-11e6-8389-cff78c190864.png">
 
-All data is injected using the `content` CSS attribute. All data is stored inside a SASS map found in `scss/_elements.scss`. You can choose to compile the entire SASS map into CSS (~50kb minified) or import specific elements within your SASS (~4kb per element). SASS usage is explained below.
+All data is injected using the `content` CSS attribute and is stored within a SASS map found in `scss/_elements.scss`. You can choose to compile the entire SASS map into CSS (~50kb minified) or import specific elements within your SASS (~4kb per element). SASS usage is explained below.
 
 ######CSS
 
