@@ -1,0 +1,64 @@
+@import 'shared';
+@import 'elements';
+
+@mixin set-size($width, $height) {
+	width: $width;
+	height: $height;
+	font-size: $height * .125;
+
+	.element {
+		&__atomic-number,
+		&__atomic-mass {
+			font-size: 1em;
+		}
+
+		&__symbol {
+			font-size: 5em;
+		}
+	}
+}
+
+@mixin elementStyle($element-name, $element-data) {
+	.element__symbol {
+		&::before {
+			content: map-get($element-data, 'symbol');
+		}
+	}
+
+	.element__atomic-number {
+		&::before {
+			content: map-get($element-data, 'atomicNumber');
+		}
+	}
+
+	.element__atomic-mass {
+		&::before {
+			content: map-get($element-data, 'atomicMass');
+		}
+	}
+}
+
+@mixin elemental($width, $height, $element-name: '') {
+	.element {
+		@extend %element;
+		@include set-size($width, $height);
+
+		@if $element-name != ''{
+			$element-data: map-get($elements, $element-name);
+			&.#{$element-name}, &.#{map-get($element-data, 'symbol')}{
+				@include elementStyle($element-name, $element-data);
+			}
+
+		} @else {
+
+			@each $element-name, $element-data in $elements {
+
+				&.#{$element-name}, &.#{map-get($element-data, 'symbol')}{
+					@include elementStyle($element-name, $element-data);
+				}
+			}
+		}
+	}
+}
+
+@include elemental(100px, 100px);

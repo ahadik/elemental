@@ -1,0 +1,25 @@
+%element {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	padding: 1%;
+
+	.element__atomic-number {
+		flex-basis: 0;
+		width: 100%;
+	}
+
+	.element__symbol {
+		flex-basis: 100%;
+		line-height: 1em;
+		text-align: center;
+		width: 100%;
+	}
+
+	.element__atomic-mass {
+		flex-basis: 0;
+		text-align: right;
+		width: 100%;
+	}
+}

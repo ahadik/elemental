@@ -1,0 +1,17 @@
+{
+  "name": "elemental",
+  "authors": [
+    "ahadik <alex@alexhadik.com>"
+  ],
+  "description": "The basic building blocks of the universe",
+  "main": "source/scss/elemental.scss",
+  "license": "MIT",
+  "homepage": "elemental.alexhadik.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
